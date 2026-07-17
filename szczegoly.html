@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BoliHelp AI - Szczegóły objawu</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<div class="logo">
+🩺 BoliHelp <span>2.0 AI</span>
+</div>
+
+<a href="kobieta.html" class="language">
+⬅ Atlas
+</a>
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<h1 id="title">
+🩺 Informacja
+</h1>
+
+
+<div id="details" class="result-box" style="display:block">
+
+
+<p>
+Ładowanie informacji...
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 BoliHelp 2.0 AI
+
+</footer>
+
+
+
+<script>
+
+
+const params = new URLSearchParams(window.location.search);
+
+const objaw = params.get("objaw");
+
+
+const data = {
+
+
+glowa: {
+
+title:"🧠 Głowa",
+
+info:"Ból głowy może mieć różne przyczyny, np. zmęczenie, stres, odwodnienie lub infekcję.",
+
+warning:"Nagły bardzo silny ból głowy lub objawy neurologiczne wymagają pilnej konsultacji."
+
+},
+
+
+oczy: {
+
+title:"👁️ Oczy",
+
+info:"Ból oka może być związany ze zmęczeniem, podrażnieniem lub infekcją.",
+
+warning:"Nagła utrata widzenia wymaga natychmiastowej pomocy."
+
+},
+
+
+gardlo: {
+
+title:"🗣️ Gardło",
+
+info:"Ból gardła często pojawia się przy infekcjach.",
+
+warning:"Problemy z oddychaniem wymagają pilnej pomocy."
+
+},
+
+
+klatka: {
+
+title:"❤️ Klatka piersiowa",
+
+info:"Ból w tej okolicy może mieć wiele przyczyn.",
+
+warning:"Nagły silny ból w klatce piersiowej wymaga natychmiastowej pomocy."
+
+},
+
+
+brzuch: {
+
+title:"🫃 Brzuch",
+
+info:"Ból brzucha może mieć różne przyczyny.",
+
+warning:"Silny ból brzucha lub omdlenie wymagają konsultacji."
+
+},
+
+
+plecy: {
+
+title:"🦴 Plecy",
+
+info:"Ból pleców często związany jest z mięśniami lub kręgosłupem.",
+
+warning:"Osłabienie nóg lub utrata kontroli nad oddawaniem moczu wymaga pilnej pomocy."
+
+},
+
+
+kolano: {
+
+title:"🦵 Kolano",
+
+info:"Ból kolana może wynikać z przeciążenia lub urazu.",
+
+warning:"Silny obrzęk lub brak możliwości chodzenia wymaga konsultacji."
+
+},
+
+
+pilne: {
+
+title:"🚑 Niezwłoczna pomoc",
+
+info:"Niektóre objawy wymagają szybkiej reakcji.",
+
+warning:"W razie zagrożenia życia dzwoń 112."
+
+}
+
+
+};
+
+
+
+if(data[objaw]) {
+
+
+document.getElementById("title").innerHTML=data[objaw].title;
+
+
+document.getElementById("details").innerHTML=`
+
+<h2>${data[objaw].title}</h2>
+
+<p>
+<b>Informacja:</b><br>
+${data[objaw].info}
+</p>
+
+
+<div class="warning">
+
+⚠️ ${data[objaw].warning}
+
+</div>
+
+`;
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
