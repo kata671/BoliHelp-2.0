@@ -1,38 +1,124 @@
 {
   "objawy": [
+
     {
       "nazwa": "ból głowy",
-      "slowa": ["głowa", "ból głowy", "migrena"],
+      "slowa": ["głowa", "ból głowy", "migrena", "czaszka"],
       "informacja": "Ból głowy może mieć wiele przyczyn, np. zmęczenie, stres, odwodnienie lub infekcję.",
-      "alarm": "Jeżeli ból jest nagły, bardzo silny lub pojawił się z innymi niepokojącymi objawami, skontaktuj się z lekarzem."
+      "alarm": "Nagły bardzo silny ból głowy, zaburzenia mowy lub utrata przytomności wymagają pilnej pomocy."
     },
+
 
     {
       "nazwa": "gorączka",
-      "slowa": ["gorączka", "temperatura", "wysoka temperatura"],
-      "informacja": "Gorączka często towarzyszy infekcjom i jest reakcją organizmu na stan zapalny.",
-      "alarm": "Wysoka lub długo utrzymująca się gorączka wymaga konsultacji."
+      "slowa": ["gorączka", "temperatura", "wysoka temperatura", "gorąco"],
+      "informacja": "Gorączka często pojawia się podczas infekcji i jest reakcją obronną organizmu.",
+      "alarm": "Bardzo wysoka lub długo utrzymująca się gorączka wymaga konsultacji."
     },
+
 
     {
       "nazwa": "ból brzucha",
-      "slowa": ["brzuch", "ból brzucha", "żołądek"],
-      "informacja": "Ból brzucha może mieć różne przyczyny od problemów trawiennych po inne schorzenia.",
+      "slowa": ["brzuch", "ból brzucha", "żołądek", "jelita"],
+      "informacja": "Ból brzucha może mieć różne przyczyny, od problemów trawiennych po inne dolegliwości.",
       "alarm": "Silny ból brzucha, omdlenie lub krwawienie wymagają pilnej pomocy."
     },
 
+
     {
       "nazwa": "kaszel",
-      "slowa": ["kaszel", "kaszle", "suchy kaszel"],
+      "slowa": ["kaszel", "kaszle", "suchy kaszel", "mokry kaszel"],
       "informacja": "Kaszel może występować przy infekcjach dróg oddechowych lub podrażnieniu.",
-      "alarm": "Problemy z oddychaniem lub ból w klatce piersiowej wymagają pilnej konsultacji."
+      "alarm": "Problemy z oddychaniem, duszność lub sinienie wymagają natychmiastowej pomocy."
     },
+
 
     {
       "nazwa": "ból klatki piersiowej",
-      "slowa": ["klatka", "serce", "ból w klatce"],
-      "informacja": "Ból w klatce piersiowej może mieć różne przyczyny.",
+      "slowa": ["klatka", "ból w klatce", "serce", "ucisk w klatce"],
+      "informacja": "Ból w klatce piersiowej może mieć wiele przyczyn.",
       "alarm": "Nagły silny ból w klatce piersiowej wymaga natychmiastowej pomocy."
+    },
+
+
+    {
+      "nazwa": "ból ucha",
+      "slowa": ["ucho", "ból ucha", "uszy"],
+      "informacja": "Ból ucha może być związany z infekcją, podrażnieniem lub stanem zapalnym.",
+      "alarm": "Silny ból, wyciek z ucha lub wysoka gorączka wymagają konsultacji."
+    },
+
+
+    {
+      "nazwa": "ból zęba",
+      "slowa": ["ząb", "ząb boli", "zęby", "dentysta"],
+      "informacja": "Ból zęba często związany jest z próchnicą lub stanem zapalnym.",
+      "alarm": "Obrzęk twarzy, gorączka lub silny ból wymagają kontaktu ze stomatologiem."
+    },
+
+
+    {
+      "nazwa": "ból pleców",
+      "slowa": ["plecy", "kręgosłup", "lędźwie", "ból pleców"],
+      "informacja": "Ból pleców może wynikać z przeciążenia mięśni lub problemów z kręgosłupem.",
+      "alarm": "Osłabienie nóg lub problemy z kontrolą oddawania moczu wymagają pilnej konsultacji."
+    },
+
+
+    {
+      "nazwa": "ból kolana",
+      "slowa": ["kolano", "staw kolanowy", "kolana"],
+      "informacja": "Ból kolana może wynikać z urazu, przeciążenia lub problemów ze stawem.",
+      "alarm": "Duży obrzęk lub brak możliwości chodzenia wymagają konsultacji."
+    },
+
+
+    {
+      "nazwa": "ból szyi",
+      "slowa": ["szyja", "kark", "ból karku"],
+      "informacja": "Ból szyi często związany jest z napięciem mięśni lub przeciążeniem.",
+      "alarm": "Silny ból szyi po urazie wymaga konsultacji."
+    },
+
+
+    {
+      "nazwa": "zawroty głowy",
+      "slowa": ["zawroty", "kręci mi się w głowie", "równowaga"],
+      "informacja": "Zawroty głowy mogą mieć wiele przyczyn, np. zmęczenie, odwodnienie lub problemy z uchem.",
+      "alarm": "Zawroty z utratą przytomności lub osłabieniem jednej strony ciała wymagają pilnej pomocy."
+    },
+
+
+    {
+      "nazwa": "nudności",
+      "slowa": ["nudności", "mdłości", "niedobrze"],
+      "informacja": "Nudności mogą pojawić się przy infekcjach, problemach żołądkowych lub innych sytuacjach.",
+      "alarm": "Silne odwodnienie lub uporczywe wymioty wymagają konsultacji."
+    },
+
+
+    {
+      "nazwa": "ból gardła",
+      "slowa": ["gardło", "ból gardła", "przełykanie"],
+      "informacja": "Ból gardła często występuje podczas infekcji.",
+      "alarm": "Problemy z oddychaniem lub przełykaniem wymagają pilnej pomocy."
+    },
+
+
+    {
+      "nazwa": "wysypka",
+      "slowa": ["wysypka", "plamy", "skóra", "swędzenie"],
+      "informacja": "Zmiany skórne mogą mieć różne przyczyny, np. alergię lub podrażnienie.",
+      "alarm": "Obrzęk twarzy, trudności z oddychaniem lub szybko nasilająca się wysypka wymagają pomocy."
+    },
+
+
+    {
+      "nazwa": "zmęczenie",
+      "slowa": ["zmęczenie", "brak energii", "senność"],
+      "informacja": "Zmęczenie może być związane ze stresem, brakiem snu lub infekcją.",
+      "alarm": "Nagłe bardzo silne osłabienie wymaga konsultacji."
     }
+
   ]
 }
