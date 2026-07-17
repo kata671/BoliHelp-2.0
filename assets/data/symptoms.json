@@ -1,0 +1,38 @@
+{
+  "objawy": [
+    {
+      "nazwa": "ból głowy",
+      "slowa": ["głowa", "ból głowy", "migrena"],
+      "informacja": "Ból głowy może mieć wiele przyczyn, np. zmęczenie, stres, odwodnienie lub infekcję.",
+      "alarm": "Jeżeli ból jest nagły, bardzo silny lub pojawił się z innymi niepokojącymi objawami, skontaktuj się z lekarzem."
+    },
+
+    {
+      "nazwa": "gorączka",
+      "slowa": ["gorączka", "temperatura", "wysoka temperatura"],
+      "informacja": "Gorączka często towarzyszy infekcjom i jest reakcją organizmu na stan zapalny.",
+      "alarm": "Wysoka lub długo utrzymująca się gorączka wymaga konsultacji."
+    },
+
+    {
+      "nazwa": "ból brzucha",
+      "slowa": ["brzuch", "ból brzucha", "żołądek"],
+      "informacja": "Ból brzucha może mieć różne przyczyny od problemów trawiennych po inne schorzenia.",
+      "alarm": "Silny ból brzucha, omdlenie lub krwawienie wymagają pilnej pomocy."
+    },
+
+    {
+      "nazwa": "kaszel",
+      "slowa": ["kaszel", "kaszle", "suchy kaszel"],
+      "informacja": "Kaszel może występować przy infekcjach dróg oddechowych lub podrażnieniu.",
+      "alarm": "Problemy z oddychaniem lub ból w klatce piersiowej wymagają pilnej konsultacji."
+    },
+
+    {
+      "nazwa": "ból klatki piersiowej",
+      "slowa": ["klatka", "serce", "ból w klatce"],
+      "informacja": "Ból w klatce piersiowej może mieć różne przyczyny.",
+      "alarm": "Nagły silny ból w klatce piersiowej wymaga natychmiastowej pomocy."
+    }
+  ]
+}
