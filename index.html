@@ -6,9 +6,10 @@
 
 <title>BoliHelp 2.0 AI - Twój inteligentny pomocnik zdrowia</title>
 
-<meta name="description" content="BoliHelp AI pomaga analizować objawy, znaleźć informacje o bólu i korzystać z atlasu ciała.">
+<meta name="description" content="BoliHelp AI pomaga analizować objawy i znaleźć informacje o bólu.">
 
 <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     </div>
 
     <div class="language">
-        🌍 PL ▼
+        🌍 PL
     </div>
 
 </header>
@@ -28,46 +29,56 @@
 
 <section class="hero">
 
-    <h1>
-        Co Cię boli?
-    </h1>
+<h1>Co Cię boli?</h1>
 
-    <p>
-        Opisz swoje objawy, a BoliHelp pomoże Ci znaleźć informacje.
-    </p>
+<p>
+Opisz swoje objawy, a BoliHelp pomoże znaleźć informacje.
+</p>
 
 
-    <div class="ai-search">
+<div class="ai-search">
 
-        <input 
-        type="text" 
-        placeholder="Np. boli mnie głowa, mam gorączkę..."
-        id="symptomInput">
+<input 
+id="symptomInput"
+type="text"
+placeholder="Np. boli mnie głowa, mam gorączkę...">
 
-        <button id="searchButton">
-            🔍 Analizuj objawy
-        </button>
+<button id="searchButton">
+🔍 Analizuj objawy
+</button>
 
-    </div>
+</div>
 
 
-    <div class="ai-box">
 
-        <div class="ai-icon">
-            🤖
-        </div>
+<div class="ai-box">
 
-        <div>
-            <h2>Asystent AI</h2>
-            <p>
-            Inteligentna analiza objawów i wskazówki, kiedy warto skontaktować się z lekarzem.
-            </p>
-        </div>
+<div class="ai-icon">
+🤖
+</div>
 
-    </div>
+<div>
+
+<h2>Asystent AI</h2>
+
+<p>
+Inteligentna analiza objawów i informacje pomocnicze.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- TU POJAWI SIĘ WYNIK AI -->
+
+<div id="resultBox" class="result-box"></div>
 
 
 </section>
+
+
 
 
 
@@ -81,9 +92,7 @@
 
 <a href="kobieta.html" class="card">
 
-<div>
-👩
-</div>
+<div>👩</div>
 
 <h3>Kobieta</h3>
 
@@ -95,9 +104,7 @@
 
 <a href="mezczyzna.html" class="card">
 
-<div>
-👨
-</div>
+<div>👨</div>
 
 <h3>Mężczyzna</h3>
 
@@ -109,9 +116,7 @@
 
 <a href="dziecko.html" class="card">
 
-<div>
-👶
-</div>
+<div>👶</div>
 
 <h3>Dziecko</h3>
 
@@ -127,12 +132,13 @@
 
 
 
+
 <section class="emergency">
 
 <h2>🚑 Nagła pomoc</h2>
 
 <p>
-Jeżeli objawy są silne lub nagłe, skontaktuj się z odpowiednimi służbami ratunkowymi.
+Jeżeli objawy są nagłe lub bardzo silne, skontaktuj się z pomocą medyczną.
 </p>
 
 <a href="tel:112">
@@ -144,6 +150,7 @@ Zadzwoń 112
 
 
 
+
 <footer>
 
 <p>
@@ -151,10 +158,11 @@ Zadzwoń 112
 </p>
 
 <p>
-Informacje mają charakter edukacyjny i nie zastępują konsultacji lekarskiej.
+Informacje edukacyjne, nie zastępują konsultacji lekarskiej.
 </p>
 
 </footer>
+
 
 
 <script src="assets/js/main.js?v=2"></script>
