@@ -1,34 +1,164 @@
-bolihelp/
-│
-├── index.html
-├── kobieta.html
-├── mezczyzna.html
-├── dziecko.html
-├── szczegoly.html
-├── ai.html
-│
-├── assets/
-│   ├── css/
-│   │     style.css
-│   │     atlas.css
-│   │     ai.css
-│   │
-│   ├── js/
-│   │     main.js
-│   │     atlas.js
-│   │     ai.js
-│   │     search.js
-│   │
-│   ├── data/
-│   │     atlas.json
-│   │     symptoms.json
-│   │
-│   ├── img/
-│   │     logo.svg
-│   │     hero.png
-│   │     icons/
-│   │
-│   └── lang/
-│         pl.json
-│         en.json
-│         de.json
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BoliHelp 2.0 AI - Twój inteligentny pomocnik zdrowia</title>
+
+<meta name="description" content="BoliHelp AI pomaga analizować objawy, znaleźć informacje o bólu i korzystać z atlasu ciała.">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="top">
+
+    <div class="logo">
+        🩺 BoliHelp <span>2.0 AI</span>
+    </div>
+
+    <div class="language">
+        🌍 PL ▼
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>
+        Co Cię boli?
+    </h1>
+
+    <p>
+        Opisz swoje objawy, a BoliHelp pomoże Ci znaleźć informacje.
+    </p>
+
+
+    <div class="ai-search">
+
+        <input 
+        type="text" 
+        placeholder="Np. boli mnie głowa, mam gorączkę..."
+        id="symptomInput">
+
+        <button id="searchButton">
+            🔍 Analizuj objawy
+        </button>
+
+    </div>
+
+
+    <div class="ai-box">
+
+        <div class="ai-icon">
+            🤖
+        </div>
+
+        <div>
+            <h2>Asystent AI</h2>
+            <p>
+            Inteligentna analiza objawów i wskazówki, kiedy warto skontaktować się z lekarzem.
+            </p>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<section class="body-choice">
+
+<h2>Wybierz osobę</h2>
+
+
+<div class="cards">
+
+
+<a href="kobieta.html" class="card">
+
+<div>
+👩
+</div>
+
+<h3>Kobieta</h3>
+
+<p>Atlas kobiecego ciała</p>
+
+</a>
+
+
+
+<a href="mezczyzna.html" class="card">
+
+<div>
+👨
+</div>
+
+<h3>Mężczyzna</h3>
+
+<p>Atlas męskiego ciała</p>
+
+</a>
+
+
+
+<a href="dziecko.html" class="card">
+
+<div>
+👶
+</div>
+
+<h3>Dziecko</h3>
+
+<p>Objawy u dzieci</p>
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="emergency">
+
+<h2>🚑 Nagła pomoc</h2>
+
+<p>
+Jeżeli objawy są silne lub nagłe, skontaktuj się z odpowiednimi służbami ratunkowymi.
+</p>
+
+<a href="tel:112">
+Zadzwoń 112
+</a>
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 BoliHelp 2.0 AI
+</p>
+
+<p>
+Informacje mają charakter edukacyjny i nie zastępują konsultacji lekarskiej.
+</p>
+
+</footer>
+
+
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
