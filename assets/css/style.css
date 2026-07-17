@@ -6,37 +6,37 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height:100vh;
     background:
-        radial-gradient(circle at top, rgba(120,80,255,0.35), transparent 40%),
-        linear-gradient(135deg, #171033, #082b3d, #063b45);
-    color: white;
+    radial-gradient(circle at top, rgba(140,90,255,.35), transparent 40%),
+    linear-gradient(135deg,#171033,#082b3d,#063b45);
+    color:white;
 }
 
 
 /* HEADER */
 
 .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: 700;
+    font-size:30px;
+    font-weight:700;
 }
 
 .logo span {
-    color: #7fffd4;
+    color:#7fffd4;
 }
 
+
 .language {
-    padding: 10px 18px;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(10px);
+    background:rgba(255,255,255,.15);
+    padding:10px 20px;
+    border-radius:25px;
 }
 
 
@@ -44,50 +44,64 @@ body {
 /* HERO */
 
 .hero {
-    text-align: center;
-    padding: 40px 8%;
+    text-align:center;
+    padding:40px 8%;
 }
 
 .hero h1 {
-    font-size: 55px;
-    margin-bottom: 15px;
+    font-size:55px;
+    margin-bottom:15px;
 }
 
 .hero p {
-    font-size: 20px;
-    opacity: .85;
+    font-size:20px;
+    opacity:.85;
 }
 
 
 
-/* AI SEARCH */
+/* SEARCH */
 
 .ai-search {
-    margin: 35px auto;
-    max-width: 700px;
-    display: flex;
-    gap: 10px;
+
+    max-width:750px;
+    margin:35px auto;
+
+    display:flex;
+    gap:10px;
+
 }
+
 
 .ai-search input {
 
     flex:1;
-    padding:18px;
-    border-radius:30px;
+
+    padding:18px 25px;
+
     border:none;
+    border-radius:35px;
+
     font-size:16px;
+
 }
 
 
 .ai-search button {
 
-    padding:18px 25px;
-    border-radius:30px;
     border:none;
-    cursor:pointer;
+
+    padding:18px 30px;
+
+    border-radius:35px;
+
     background:#7fffd4;
+
     color:#102030;
+
     font-weight:bold;
+
+    cursor:pointer;
 
 }
 
@@ -97,31 +111,93 @@ body {
 
 .ai-box {
 
-    max-width:700px;
+    max-width:750px;
+
     margin:30px auto;
+
     padding:25px;
+
     display:flex;
-    gap:20px;
+
     align-items:center;
 
-    background:rgba(255,255,255,0.12);
+    gap:20px;
+
+
+    background:rgba(255,255,255,.12);
+
     border-radius:25px;
+
     backdrop-filter:blur(15px);
 
 }
 
 
 .ai-icon {
-    font-size:50px;
+
+    font-size:55px;
+
 }
 
 
 
-/* CARDS */
+/* WYNIK AI */
+
+
+.result-box {
+
+    display:none;
+
+    max-width:750px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    text-align:left;
+
+    line-height:1.6;
+
+}
+
+
+.result-box h2 {
+
+    color:#7fffd4;
+
+    margin-bottom:15px;
+
+}
+
+
+.result-box .warning {
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:rgba(255,80,80,.25);
+
+}
+
+
+
+/* KARTY */
+
 
 .body-choice {
 
     padding:50px 8%;
+
     text-align:center;
 
 }
@@ -130,23 +206,30 @@ body {
 .cards {
 
     margin-top:30px;
+
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
     gap:25px;
 
 }
 
 
+
 .card {
 
     text-decoration:none;
+
     color:white;
 
     padding:35px 20px;
 
-    background:rgba(255,255,255,0.12);
+
+    background:rgba(255,255,255,.12);
 
     border-radius:30px;
+
 
     backdrop-filter:blur(12px);
 
@@ -159,7 +242,7 @@ body {
 
     transform:translateY(-8px);
 
-    background:rgba(255,255,255,0.22);
+    background:rgba(255,255,255,.22);
 
 }
 
@@ -172,20 +255,21 @@ body {
 
 
 
-/* EMERGENCY */
+
+/* POMOC */
+
 
 .emergency {
 
     margin:40px 8%;
+
     padding:30px;
 
     text-align:center;
 
     border-radius:30px;
 
-    background:rgba(255,60,60,0.18);
-
-    border:1px solid rgba(255,100,100,.5);
+    background:rgba(255,60,60,.18);
 
 }
 
@@ -206,13 +290,10 @@ body {
 
     text-decoration:none;
 
-    font-weight:bold;
-
 }
 
 
 
-/* FOOTER */
 
 footer {
 
@@ -226,12 +307,13 @@ footer {
 
 
 
-/* TELEFON */
 
 @media(max-width:700px){
 
 .hero h1 {
+
     font-size:38px;
+
 }
 
 
@@ -245,13 +327,6 @@ footer {
 .ai-search button {
 
     width:100%;
-
-}
-
-
-.logo {
-
-    font-size:22px;
 
 }
 
