@@ -1,0 +1,121 @@
+.body-map {
+
+    position:relative;
+
+    width:320px;
+
+    height:650px;
+
+    margin:40px auto;
+
+    background:
+    radial-gradient(circle, rgba(127,255,212,.15), transparent 50%);
+
+    border-radius:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+/* tymczasowa sylwetka */
+
+.person {
+
+    font-size:220px;
+
+    filter:
+    drop-shadow(0 0 25px rgba(127,255,212,.5));
+
+}
+
+
+
+/* punkty bólu */
+
+
+.point {
+
+    position:absolute;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:28px;
+
+
+    background:
+    rgba(255,255,255,.2);
+
+
+    backdrop-filter:blur(10px);
+
+
+    box-shadow:
+    0 0 20px rgba(127,255,212,.8);
+
+
+    transition:.3s;
+
+}
+
+
+
+.point:hover {
+
+    transform:scale(1.25);
+
+}
+
+
+
+
+.head {
+
+    top:90px;
+
+    left:135px;
+
+}
+
+
+
+.chest {
+
+    top:260px;
+
+    left:135px;
+
+}
+
+
+
+.stomach {
+
+    top:330px;
+
+    left:135px;
+
+}
+
+
+
+.knee {
+
+    bottom:120px;
+
+    left:135px;
+
+}
