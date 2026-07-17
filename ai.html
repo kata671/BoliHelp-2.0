@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BoliHelp AI - Asystent</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+<div class="logo">
+🩺 BoliHelp <span>2.0 AI</span>
+</div>
+
+<a href="index.html" class="language">
+⬅ Powrót
+</a>
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<h1>🤖 Asystent BoliHelp AI</h1>
+
+<p>
+Opisz swój problem, a AI pomoże uporządkować informacje.
+</p>
+
+
+
+<div class="ai-box">
+
+<div class="ai-icon">
+🤖
+</div>
+
+<div>
+
+<h2>Rozmowa z AI</h2>
+
+<p>
+Zacznij od opisania: gdzie boli, od kiedy i jakie są objawy.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="result-box" style="display:block">
+
+
+<h2>💬 Twoje objawy</h2>
+
+
+<textarea 
+id="aiText"
+placeholder="Np. boli mnie brzuch od rana, mam nudności..."
+style="
+width:100%;
+height:120px;
+padding:20px;
+border-radius:20px;
+border:none;
+font-size:16px;
+margin-top:20px;
+">
+</textarea>
+
+
+
+<button 
+onclick="analyzeAI()"
+style="
+margin-top:20px;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+background:#7fffd4;
+cursor:pointer;
+font-weight:bold;
+">
+
+Analizuj
+
+</button>
+
+
+
+<div id="aiResult" style="margin-top:25px;"></div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 BoliHelp 2.0 AI
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function analyzeAI(){
+
+
+let text =
+document.getElementById("aiText").value.toLowerCase();
+
+
+
+let result =
+document.getElementById("aiResult");
+
+
+
+if(text.trim()==""){
+
+
+result.innerHTML =
+"✏️ Napisz najpierw swoje objawy.";
+
+
+return;
+
+}
+
+
+
+let questions = "";
+
+
+
+if(text.includes("brzuch")){
+
+
+questions = `
+
+<h3>🫃 Ból brzucha</h3>
+
+<p>
+Gdzie dokładnie boli?
+</p>
+
+<ul>
+<li>Prawa strona</li>
+<li>Lewa strona</li>
+<li>Środek brzucha</li>
+</ul>
+
+
+<p>
+Czy występuje gorączka lub nudności?
+</p>
+
+`;
+
+}
+
+
+else if(text.includes("głowa")){
+
+
+questions = `
+
+<h3>🧠 Ból głowy</h3>
+
+<p>
+Czy ból jest nagły czy pojawiał się stopniowo?
+</p>
+
+<p>
+Czy masz zawroty głowy lub nudności?
+</p>
+
+`;
+
+}
+
+
+
+else {
+
+
+questions = `
+
+<h3>🩺 Informacja</h3>
+
+<p>
+Nie znalazłem dokładnego dopasowania.
+</p>
+
+<p>
+Spróbuj opisać:
+- miejsce bólu
+- czas trwania
+- dodatkowe objawy
+</p>
+
+`;
+
+}
+
+
+
+result.innerHTML = questions;
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
