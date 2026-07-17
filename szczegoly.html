@@ -22,8 +22,8 @@
 🩺 BoliHelp <span>2.0 AI</span>
 </div>
 
-<a href="kobieta.html" class="language">
-⬅ Atlas
+<a href="index.html" class="language">
+⬅ Strona główna
 </a>
 
 </header>
@@ -39,16 +39,14 @@
 </h1>
 
 
-<div id="details" class="result-box" style="display:block">
 
+<div id="details" class="result-box" style="display:block">
 
 <p>
 Ładowanie informacji...
 </p>
 
-
 </div>
-
 
 
 </section>
@@ -64,12 +62,15 @@
 
 
 
+
+
 <script>
 
 
 const params = new URLSearchParams(window.location.search);
 
 const objaw = params.get("objaw");
+
 
 
 const data = {
@@ -79,77 +80,142 @@ glowa: {
 
 title:"🧠 Głowa",
 
-info:"Ból głowy może mieć różne przyczyny, np. zmęczenie, stres, odwodnienie lub infekcję.",
+info:"Ból głowy może być związany ze zmęczeniem, stresem, odwodnieniem, infekcją lub innymi przyczynami.",
 
-warning:"Nagły bardzo silny ból głowy lub objawy neurologiczne wymagają pilnej konsultacji."
+warning:"Nagły bardzo silny ból głowy, zaburzenia mowy, utrata siły lub świadomości wymagają pilnej pomocy."
 
 },
+
 
 
 oczy: {
 
 title:"👁️ Oczy",
 
-info:"Ból oka może być związany ze zmęczeniem, podrażnieniem lub infekcją.",
+info:"Ból oczu może wystąpić przy zmęczeniu, podrażnieniu lub infekcji.",
 
-warning:"Nagła utrata widzenia wymaga natychmiastowej pomocy."
+warning:"Nagła utrata widzenia lub silny ból oka wymagają szybkiej konsultacji."
 
 },
+
+
 
 
 gardlo: {
 
 title:"🗣️ Gardło",
 
-info:"Ból gardła często pojawia się przy infekcjach.",
+info:"Ból gardła często pojawia się podczas infekcji.",
 
-warning:"Problemy z oddychaniem wymagają pilnej pomocy."
+warning:"Problemy z oddychaniem lub przełykaniem wymagają pilnej pomocy."
 
 },
+
+
+
+
+ucho: {
+
+title:"👂 Ucho",
+
+info:"Ból ucha może być związany z infekcją lub podrażnieniem.",
+
+warning:"Silny ból, wyciek z ucha lub wysoka gorączka wymagają konsultacji."
+
+},
+
+
 
 
 klatka: {
 
 title:"❤️ Klatka piersiowa",
 
-info:"Ból w tej okolicy może mieć wiele przyczyn.",
+info:"Ból w klatce piersiowej może mieć wiele różnych przyczyn.",
 
 warning:"Nagły silny ból w klatce piersiowej wymaga natychmiastowej pomocy."
 
 },
 
 
+
+
 brzuch: {
 
 title:"🫃 Brzuch",
 
-info:"Ból brzucha może mieć różne przyczyny.",
+info:"Ból brzucha może mieć różne przyczyny, od problemów trawiennych po inne dolegliwości.",
 
-warning:"Silny ból brzucha lub omdlenie wymagają konsultacji."
+warning:"Silny ból brzucha, omdlenie lub krwawienie wymagają pilnej pomocy."
 
 },
+
+
 
 
 plecy: {
 
 title:"🦴 Plecy",
 
-info:"Ból pleców często związany jest z mięśniami lub kręgosłupem.",
+info:"Ból pleców często związany jest z przeciążeniem mięśni lub kręgosłupa.",
 
-warning:"Osłabienie nóg lub utrata kontroli nad oddawaniem moczu wymaga pilnej pomocy."
+warning:"Osłabienie nóg lub problemy z kontrolą oddawania moczu wymagają pilnej konsultacji."
 
 },
+
+
 
 
 kolano: {
 
 title:"🦵 Kolano",
 
-info:"Ból kolana może wynikać z przeciążenia lub urazu.",
+info:"Ból kolana może wynikać z urazu, przeciążenia lub problemów ze stawem.",
 
-warning:"Silny obrzęk lub brak możliwości chodzenia wymaga konsultacji."
+warning:"Duży obrzęk lub brak możliwości chodzenia wymagają konsultacji."
 
 },
+
+
+
+
+goraczka: {
+
+title:"🌡️ Gorączka",
+
+info:"Gorączka jest częstą reakcją organizmu podczas infekcji.",
+
+warning:"Bardzo wysoka lub długo utrzymująca się gorączka wymaga konsultacji."
+
+},
+
+
+
+
+kaszel: {
+
+title:"🫁 Kaszel",
+
+info:"Kaszel może pojawić się przy infekcji dróg oddechowych lub podrażnieniu.",
+
+warning:"Duszenie się, trudności w oddychaniu lub sinienie wymagają natychmiastowej pomocy."
+
+},
+
+
+
+
+skora: {
+
+title:"🌸 Skóra",
+
+info:"Zmiany skórne mogą mieć wiele przyczyn, np. podrażnienie lub alergię.",
+
+warning:"Szybko rozprzestrzeniająca się wysypka lub obrzęk twarzy wymagają pilnej pomocy."
+
+},
+
+
 
 
 pilne: {
@@ -158,7 +224,7 @@ title:"🚑 Niezwłoczna pomoc",
 
 info:"Niektóre objawy wymagają szybkiej reakcji.",
 
-warning:"W razie zagrożenia życia dzwoń 112."
+warning:"W sytuacji zagrożenia życia dzwoń 112."
 
 }
 
@@ -167,36 +233,62 @@ warning:"W razie zagrożenia życia dzwoń 112."
 
 
 
+
+
 if(data[objaw]) {
 
 
-document.getElementById("title").innerHTML=data[objaw].title;
+document.getElementById("title").innerHTML =
+data[objaw].title;
 
 
-document.getElementById("details").innerHTML=`
+
+document.getElementById("details").innerHTML = `
+
 
 <h2>${data[objaw].title}</h2>
 
+
 <p>
+
 <b>Informacja:</b><br>
+
 ${data[objaw].info}
+
 </p>
+
 
 
 <div class="warning">
 
-⚠️ ${data[objaw].warning}
+⚠️ <b>Uwaga:</b><br>
+
+${data[objaw].warning}
 
 </div>
+
 
 `;
 
 
+
+}
+else {
+
+
+document.getElementById("details").innerHTML = `
+
+<h2>Nie znaleziono informacji</h2>
+
+<p>Wybierz objaw z atlasu.</p>
+
+`;
+
 }
 
 
-
 </script>
+
 
 
 </body>
